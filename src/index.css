@@ -24,6 +24,12 @@ body {
   font-family: 'Inter', 'Manrope', sans-serif;
 }
 
+@media (max-width: 639px) {
+  .contact-hero {
+    background-image: none !important;
+  }
+}
+
 ::selection {
   background: #e5232b;
   color: #ffffff;

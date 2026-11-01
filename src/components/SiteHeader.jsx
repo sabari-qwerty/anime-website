@@ -24,7 +24,7 @@ export default function SiteHeader({ active = '', cartCount = 0 }) {
         </Link>
 
         <nav aria-label="Primary navigation" className="hidden flex-1 items-center justify-center gap-7 lg:flex xl:gap-9">
-          {links.map(([label, href, key]) => <Link key={label} to={href} className={`text-[10px] font-medium transition-colors hover:text-brand xl:text-[11px] ${active === key ? 'border-b-2 border-brand pb-2 text-ink' : 'text-ink/65'}`}>{label}</Link>)}
+          {links.map(([label, href, key]) => <Link key={label} to={href} className={`transition-colors hover:text-brand ${active === key ? 'text-[12px] font-bold text-brand' : 'text-[10px] font-medium text-ink/65 xl:text-[11px]'}`}>{label}</Link>)}
         </nav>
 
         <div className="ml-auto flex items-center gap-3 sm:gap-4">

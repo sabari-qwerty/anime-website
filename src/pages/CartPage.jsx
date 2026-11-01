@@ -50,8 +50,8 @@ export default function CartPage() {
 
     <main>
       <section className="relative isolate overflow-hidden border-b border-ink/[0.06] bg-paper">
-        <div className="absolute inset-0 hidden lg:block"><img src="/images/product-description-luffy.png" alt="Luffy illustration" className="h-full w-full object-cover object-[67%_42%]" /><div className="absolute inset-0 bg-[linear-gradient(90deg,#F7F6F2_0%,#F7F6F2_34%,rgba(247,246,242,0.88)_46%,rgba(247,246,242,0.14)_69%,rgba(247,246,242,0)_100%)]" /></div>
-        <div className="relative mx-auto flex min-h-[11rem] max-w-[1680px] items-center px-5 py-8 sm:px-8 lg:min-h-[11rem] lg:px-16 xl:px-20">
+        <div className="absolute inset-0 hidden md:block"><img src="/images/contact-hero.png" alt="Luffy illustration with a crimson sun and mountain landscape" className="h-full w-full object-cover object-[center_52%]" /><div className="absolute inset-0 bg-[linear-gradient(90deg,#F7F6F2_0%,#F7F6F2_32%,rgba(247,246,242,0.72)_46%,rgba(247,246,242,0.08)_69%,rgba(247,246,242,0)_100%)]" /></div>
+        <div className="relative mx-auto flex min-h-[9.5rem] max-w-[1680px] items-center px-5 py-7 sm:px-8 lg:min-h-[9.5rem] lg:px-16 xl:px-20">
           <div><nav aria-label="Breadcrumb" className="flex items-center gap-2 text-[10px] text-ink/55 sm:text-[11px]"><Link to="/" className="hover:text-brand">Home</Link><LuChevronRight className="h-3 w-3" /><span className="text-ink">Cart</span></nav><h1 className="mt-4 font-heading text-[clamp(3.4rem,7vw,4.7rem)] font-extrabold leading-[0.84] tracking-[-0.075em]">Your Cart<span className="text-brand">.</span></h1><p className="mt-2 text-sm text-ink/65">Great choices. Good anime. Better days.</p></div>
         </div>
       </section>

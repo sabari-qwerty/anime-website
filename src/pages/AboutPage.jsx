@@ -21,6 +21,7 @@ export default function AboutPage() {
       <SiteHeader active="about" />
       <main>
         <section className="relative isolate overflow-hidden border-b border-ink/[0.06] bg-paper">
+          <img src="/images/about-hero.png" alt="Luffy artwork with a crimson sun and mountain landscape" className="pointer-events-none absolute inset-0 hidden h-full w-full object-cover object-center md:block" />
           <div className="relative mx-auto flex min-h-[34rem] max-w-[1680px] items-center px-5 py-14 sm:px-8 lg:min-h-[35rem] lg:px-16 lg:py-20 xl:px-20">
             <div className="max-w-[25rem]">
               <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-ink/60 sm:text-[11px]">About us <span className="ml-2 inline-block w-5 align-middle border-t border-ink/60" /></p>
