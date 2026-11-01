@@ -8,7 +8,7 @@ export const products = [
     price: 999,
     compareAt: 1299,
     discount: '23% OFF',
-    image: '/images/product-luffy-gear-5.png',
+    image: '/images/product-luffy-gear-5.webp',
     alt: 'Black Luffy Gear 5 graphic tee with red ink artwork',
     colors: [{ name: 'Black', value: '#111111' }, { name: 'White', value: '#f4f4f2' }, { name: 'Grey', value: '#c8c8c8' }],
     rating: '4.9',

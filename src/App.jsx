@@ -599,7 +599,7 @@ function App() {
       >
         <div className="relative min-h-[30rem] overflow-hidden sm:min-h-[34rem] lg:min-h-[38rem]">
           <img
-            src="/images/story-luffy-mountain.png"
+            src="/images/story-luffy-mountain.webp"
             alt="Ink-style illustration of a straw-hat anime adventurer looking over snowy mountains"
             width="2048"
             height="683"

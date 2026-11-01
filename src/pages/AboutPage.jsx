@@ -21,7 +21,7 @@ export default function AboutPage() {
       <SiteHeader active="about" />
       <main>
         <section className="relative isolate overflow-hidden border-b border-ink/[0.06] bg-paper">
-          <img src="/images/about-hero.png" alt="Luffy artwork with a crimson sun and mountain landscape" className="pointer-events-none absolute inset-0 hidden h-full w-full object-cover object-center md:block" />
+          <img src="/images/about-hero.webp" alt="Luffy artwork with a crimson sun and mountain landscape" className="pointer-events-none absolute inset-0 hidden h-full w-full object-cover object-center md:block" fetchPriority="high" decoding="async" />
           <div className="relative mx-auto flex min-h-[34rem] max-w-[1680px] items-center px-5 py-14 sm:px-8 lg:min-h-[35rem] lg:px-16 lg:py-20 xl:px-20">
             <div className="max-w-[25rem]">
               <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-ink/60 sm:text-[11px]">About us <span className="ml-2 inline-block w-5 align-middle border-t border-ink/60" /></p>
@@ -33,7 +33,7 @@ export default function AboutPage() {
         </section>
 
         <section id="our-story" className="mx-auto grid max-w-[1680px] gap-10 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[0.88fr_1.35fr] lg:items-center lg:gap-12 lg:px-16 lg:py-20 xl:px-20">
-          <img src="/images/about-story.png" alt="Naruto and Sasuke overlooking Konoha" className="aspect-square w-full object-cover object-center" />
+          <img src="/images/about-story.webp" alt="Naruto and Sasuke overlooking Konoha" className="aspect-square w-full object-cover object-center" loading="lazy" decoding="async" />
           <div className="grid gap-10 lg:grid-cols-[1fr_0.78fr] lg:gap-12">
             <div>
               <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-ink/60 sm:text-[11px]">Our story <span className="ml-2 inline-block w-5 align-middle border-t border-ink/60" /></p>
@@ -60,7 +60,7 @@ export default function AboutPage() {
         </section>
 
         <section className="relative isolate min-h-[19rem] overflow-hidden bg-ink text-white sm:min-h-[22rem]">
-          <img src="/images/about-community.png" alt="Itachi-inspired red and black manga artwork" className="absolute inset-0 h-full w-full object-cover object-center" />
+          <img src="/images/about-community.webp" alt="Itachi-inspired red and black manga artwork" className="absolute inset-0 h-full w-full object-cover object-center" loading="lazy" decoding="async" />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(17,17,17,0.08)_0%,rgba(17,17,17,0.16)_42%,rgba(17,17,17,0.8)_68%,rgba(17,17,17,0.88)_100%)]" />
           <div className="relative mx-auto flex min-h-[19rem] max-w-[1680px] items-center justify-end px-5 py-10 sm:min-h-[22rem] sm:px-8 lg:px-16 xl:px-20"><div className="w-full max-w-[31rem] lg:mr-[5%]"><p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-white/75 sm:text-[11px]">Join the crew <span className="ml-2 inline-block w-5 align-middle border-t border-white/70" /></p><h2 className="mt-3 max-w-[21rem] font-heading text-[2.9rem] font-extrabold leading-[0.88] tracking-[-0.07em] sm:text-[4rem]">More Than<br />Just Tees<span className="text-brand">.</span></h2><p className="mt-4 max-w-[21rem] text-sm leading-[1.45] text-white/80">Be part of a growing community of anime fans. Follow us, share your looks, and tag us for a chance to be featured!</p><a href="#instagram" className="mt-5 inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 text-xs font-semibold text-ink transition-colors hover:bg-brand hover:text-white">Follow Us <LuArrowRight className="h-4 w-4" /></a></div></div>
         </section>
