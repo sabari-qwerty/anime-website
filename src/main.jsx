@@ -17,6 +17,15 @@ import GalleryPage from './pages/GalleryPage.jsx'
 import CartPage from './pages/CartPage.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 
+const markImageReady = (event) => {
+  if (event.target instanceof HTMLImageElement) {
+    event.target.classList.add('image-loaded')
+  }
+}
+
+document.addEventListener('load', markImageReady, true)
+document.addEventListener('error', markImageReady, true)
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
@@ -32,3 +41,9 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </StrictMode>,
 )
+
+requestAnimationFrame(() => {
+  document.querySelectorAll('img').forEach((image) => {
+    if (image.complete) image.classList.add('image-loaded')
+  })
+})

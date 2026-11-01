@@ -24,6 +24,16 @@ body {
   font-family: 'Inter', 'Manrope', sans-serif;
 }
 
+img {
+  background-color: #ecebe6;
+  opacity: 0;
+  transition: opacity 320ms ease;
+}
+
+img.image-loaded {
+  opacity: 1;
+}
+
 @media (max-width: 639px) {
   .contact-hero {
     background-image: none !important;
@@ -94,5 +104,9 @@ body {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  img {
+    transition: none;
   }
 }
