@@ -222,7 +222,7 @@ const bestSellers = [
   },
 ]
 
-const autoplayDelay = 30000
+const autoplayDelay = 5000
 
 function ArrowRight({ className = 'h-4 w-4' }) {
   return (
@@ -354,12 +354,11 @@ function App() {
               ['Cart', '/cart'],
               ['Contact Us', '/contact'],
               ['Gallery', '/gallery'],
-              ['Products', '/gallery'],
             ].map(([label, href]) => (
               <a
                 key={label}
                 href={href}
-                className="text-[10px] font-medium text-ink/65 transition-colors hover:text-brand xl:text-[11px]"
+                className="text-[12px] font-semibold text-ink/85 transition-colors hover:text-brand xl:text-[13px]"
               >
                 {label}
               </a>
@@ -420,13 +419,12 @@ function App() {
                 ['Cart', '/cart'],
                 ['Contact Us', '/contact'],
                 ['Gallery', '/gallery'],
-                ['Products', '/gallery'],
               ].map(([label, href]) => (
                 <a
                   key={label}
                   href={href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-xs font-medium text-ink/70 transition-colors hover:text-brand"
+                  className="text-base font-semibold text-ink/85 transition-colors hover:text-brand"
                 >
                   {label}
                 </a>
@@ -683,10 +681,10 @@ function App() {
             />
 
             <div className="max-w-[22rem]">
-              <h2 className="text-[11px] font-semibold text-ink sm:text-xs">
+              <h2 className="text-xs font-bold text-ink sm:text-sm">
                 Join the crew
               </h2>
-              <p className="mt-1.5 text-[10px] leading-[1.5] text-ink/45 sm:text-[11px]">
+              <p className="mt-1.5 text-xs font-medium leading-[1.5] text-ink/70 sm:text-[13px]">
                 Get exclusive drops, offers and updates.
               </p>
               <form
@@ -700,7 +698,7 @@ function App() {
                   id="footer-email"
                   type="email"
                   placeholder="Your email"
-                  className="min-w-0 flex-1 bg-transparent px-3 text-[10px] text-ink outline-none placeholder:text-ink/35"
+                  className="min-w-0 flex-1 bg-transparent px-3 text-xs text-ink outline-none placeholder:text-ink/50"
                 />
                 <button
                   type="submit"
@@ -714,10 +712,10 @@ function App() {
           </div>
 
           <div className="mt-12 flex flex-col gap-6 border-t border-ink/[0.08] pt-5 sm:mt-16 sm:flex-row sm:items-end sm:justify-between">
-            <p className="text-[9px] text-ink/45 sm:text-[10px]">
+            <p className="text-[11px] font-medium text-ink/70 sm:text-xs">
               © 2026 MANGA MART. All rights reserved.
             </p>
-            <div className="flex items-center gap-5 text-[13px] text-ink/55">
+            <div className="flex items-center gap-5 text-[14px] font-medium text-ink/75">
               <a href="#" aria-label="Instagram" className="transition-colors hover:text-brand">
                 <FaInstagram aria-hidden="true" />
               </a>
@@ -741,13 +739,13 @@ function App() {
 function FooterLinks({ title, links }) {
   return (
     <div>
-      <h2 className="text-[11px] font-semibold text-ink sm:text-xs">{title}</h2>
-      <ul className="mt-2.5 space-y-1.5">
+      <h2 className="text-xs font-bold text-ink sm:text-sm">{title}</h2>
+      <ul className="mt-2.5 space-y-2">
         {links.map((link) => (
           <li key={link}>
             <a
               href={link === 'Contact Us' ? '/contact' : '#collection'}
-              className="text-[10px] text-ink/50 transition-colors hover:text-brand sm:text-[11px]"
+              className="text-xs font-medium text-ink/75 transition-colors hover:text-brand sm:text-[13px]"
             >
               {link}
             </a>

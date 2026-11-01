@@ -8,7 +8,6 @@ const links = [
   ['Cart', '/cart', 'cart'],
   ['Contact Us', '/contact', 'contact'],
   ['Gallery', '/gallery', 'gallery'],
-  ['Products', '/gallery', 'products'],
 ]
 
 export default function SiteHeader({ active = '', cartCount = 0 }) {
@@ -24,7 +23,7 @@ export default function SiteHeader({ active = '', cartCount = 0 }) {
         </Link>
 
         <nav aria-label="Primary navigation" className="hidden flex-1 items-center justify-center gap-7 lg:flex xl:gap-9">
-          {links.map(([label, href, key]) => <Link key={label} to={href} className={`transition-colors hover:text-brand ${active === key ? 'text-[12px] font-bold text-brand' : 'text-[10px] font-medium text-ink/65 xl:text-[11px]'}`}>{label}</Link>)}
+          {links.map(([label, href, key]) => <Link key={label} to={href} className={`transition-colors hover:text-brand ${active === key ? 'text-[13px] font-bold text-brand' : 'text-[12px] font-semibold text-ink/85 xl:text-[13px]'}`}>{label}</Link>)}
         </nav>
 
         <div className="ml-auto flex items-center gap-3 sm:gap-4">
@@ -38,7 +37,7 @@ export default function SiteHeader({ active = '', cartCount = 0 }) {
           <button type="button" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen((value) => !value)} className="grid h-12 w-12 place-items-center rounded-full border border-ink/10 text-ink/70 transition-colors hover:border-ink/30 hover:text-brand lg:h-9 lg:w-9 lg:hidden">{open ? <LuX className="h-5 w-5 lg:h-4 lg:w-4" /> : <LuMenu className="h-5 w-5 lg:h-4 lg:w-4" />}</button>
         </div>
       </div>
-      {open ? <nav aria-label="Mobile navigation" className="border-t border-ink/[0.07] px-7 py-6 sm:px-10 lg:hidden"><div className="grid gap-5">{links.map(([label, href]) => <Link key={label} to={href} onClick={() => setOpen(false)} className="text-sm font-medium text-ink/70 transition-colors hover:text-brand">{label}</Link>)}</div></nav> : null}
+      {open ? <nav aria-label="Mobile navigation" className="border-t border-ink/[0.07] px-7 py-6 sm:px-10 lg:hidden"><div className="grid gap-5">{links.map(([label, href]) => <Link key={label} to={href} onClick={() => setOpen(false)} className="text-base font-semibold text-ink/85 transition-colors hover:text-brand">{label}</Link>)}</div></nav> : null}
     </header>
   )
 }
