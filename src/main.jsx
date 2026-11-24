@@ -15,6 +15,8 @@ import AboutPage from './pages/AboutPage.jsx'
 import ProductPage from './pages/ProductPage.jsx'
 import GalleryPage from './pages/GalleryPage.jsx'
 import CartPage from './pages/CartPage.jsx'
+import CreatePage from './pages/CreatePage.jsx'
+import ChatPage from './pages/ChatPage.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 
 const markImageReady = (event) => {
@@ -36,6 +38,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/product/:productId" element={<ProductPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/create" element={<CreatePage />} />
+        <Route path="/chat" element={<ChatPage />} />
         <Route path="*" element={<App />} />
       </Routes>
     </BrowserRouter>
