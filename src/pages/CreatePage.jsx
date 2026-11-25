@@ -82,7 +82,7 @@ function CreatePage() {
     try {
       const formData = new FormData()
       formData.append('model', 'gpt-image-1.5')
-      formData.append('prompt', `Create a wearable anime t-shirt mockup using the two reference images. T-shirt color: ${color.name}. Print placement: ${position.name}. Model pose and framing: ${prompt.trim() || 'a confident front-facing pose with the shirt clearly visible'}. Keep the graphic sharp, centered, print-ready, and integrated naturally into the fabric. Show the full shirt clearly and preserve the person’s recognizable features from the user photo.`)
+      formData.append('prompt', `Create a clean single-scene wearable anime t-shirt mockup using the two reference images. T-shirt color: ${color.name}. Print placement: ${position.name}. Model pose and framing: ${prompt.trim() || 'a confident front-facing pose with the shirt clearly visible'}. Keep the graphic sharp, centered, print-ready, and integrated naturally into the fabric. Show the full shirt clearly and preserve the person's recognizable features from the user photo. Use a simple full-frame composition only: no collage, split panels, inset close-ups, bottom strip, footer bar, icon strip, borders containing symbols, or UI-like layout. Do not add decorative icons, logos, watermarks, buttons, badges, menus, or unrelated graphics.`)
       formData.append('image[]', await dataUrlToBlob(userImage), 'user-photo.png')
       formData.append('image[]', await dataUrlToBlob(animeImage), 'anime-reference.png')
 

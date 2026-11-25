@@ -8,7 +8,7 @@ const links = [
   ['Cart', '/cart', 'cart'],
   ['Contact Us', '/contact', 'contact'],
   ['Gallery', '/gallery', 'gallery'],
-  ['Chat', '/chat', 'chat'],
+  ['Create with AI', '/chat', 'chat'],
 ]
 
 export default function SiteHeader({ active = '', cartCount = 0 }) {

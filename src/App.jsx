@@ -354,6 +354,7 @@ function App() {
               ['Cart', '/cart'],
               ['Contact Us', '/contact'],
               ['Gallery', '/gallery'],
+              ['Create with AI', '/chat'],
             ].map(([label, href]) => (
               <a
                 key={label}
@@ -419,6 +420,7 @@ function App() {
                 ['Cart', '/cart'],
                 ['Contact Us', '/contact'],
                 ['Gallery', '/gallery'],
+                ['Create with AI', '/chat'],
               ].map(([label, href]) => (
                 <a
                   key={label}
